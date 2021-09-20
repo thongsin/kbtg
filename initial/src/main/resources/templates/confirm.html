@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+    <div class="container">
+        <table id="cart" class="table table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th style="width:100%">Silpakorn Shop</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+                            <div class="col-sm-10">
+                                <h4 class="nomargin">เสื้อยืดลาย One KBTG</h4>
+                                <p>ใส่แล้วเท่ห์ ใส่สบาย ใส่แล้ว code ได้ code ดี</p>
+                                <p th:text="${chargeNo} ? 'สั่งซื้อเรียบร้อย หมายเลขคำสั่งซื้อ' + ${chargeNo} : 'สั่งซื้อไม่สำเร็จ'" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>            
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
